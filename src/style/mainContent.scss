@@ -1,0 +1,32 @@
+@import './variaveis';
+
+.main-container{
+ display: flex;
+ margin: 4vh;
+  .initial-text {
+    margin-left: 7vh;
+    font-family: $font;
+    margin-top: 7vh;
+    font-size: 2vh;
+    text-align: center;
+    width: 50%;
+    @media screen and (max-width: 700px) {
+      font-size: 2vh;
+      width: 100%;
+    }
+  }
+  
+  .image-main {
+    margin-right: 3vh;
+    margin-top: 1.5vh;
+    opacity: 0.7; 
+    max-width: 70vh;
+    min-width: 10vh;
+    height: auto;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+
+  }
+}
+

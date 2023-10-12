@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../style/formLogin.scss';
-export default function Formlogin() {
+export default function FormLogin() {
   return (
     <>
       <body>
@@ -10,7 +10,7 @@ export default function Formlogin() {
               <div className='col-md-6 side-image'/>
               <div className='col-md-6 right'>
                 <div className='input-box'>
-                  <header>Crie uma conta</header>
+                  <header>Logue aqui</header>
                   <div className='input-field'>
                     <input
                       type='text'
@@ -19,7 +19,7 @@ export default function Formlogin() {
                       required
                       autoComplete='off'
                     />
-                    <label htmlFor='email'>Email</label>
+                    <label htmlFor='email'>E-mail</label>
                   </div>
                   <div className='input-field'>
                     <input
@@ -28,14 +28,14 @@ export default function Formlogin() {
                       id='pass'
                       required
                     />
-                    <label htmlFor='pass'>Password</label>
+                    <label htmlFor='pass'>Senha</label>
                   </div>
                   <div className='input-field'>
-                    <input type='submit' className='submit' value='Sign Up' />
+                    <input type='submit' className='submit' value='Entrar' />
                   </div>
                   <div className='signin'>
                     <span>
-                      Já tem uma conta? <Link href='#'>Logue aqui!</Link>
+                      Não tem uma conta? <Link href='#'>Inscreva-se</Link>
                     </span>
                   </div>
                 </div>

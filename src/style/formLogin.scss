@@ -55,12 +55,6 @@ i {
   width: 330px;
   box-sizing: border-box;
 }
-img {
-  width: 35px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
 .input-box header {
   font-weight: 700;
   text-align: center;
@@ -131,12 +125,6 @@ span a:hover {
 @media only screen and (max-width: 768px) {
   .side-image {
     border-radius: 10px 10px 0 0;
-  }
-  img {
-    width: 35px;
-    position: absolute;
-    top: 20px;
-    left: 47%;
   }
   .text {
     position: absolute;
