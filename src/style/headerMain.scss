@@ -1,14 +1,23 @@
-body{
-	margin:0;
-	padding:0;
-	background:#000000;
-	font-family: 'Raleway',sans-serif;
-	color: #fff;
+@import "./variaveis.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
 }
 
 .img-logo {
   max-width: 9vh;
-	min-width: 4.5vh;
+  min-width: 4.5vh;
   // top: 2vh;
   // left: 2vh;
+}
+
+.loginBotao {
+	text-decoration: none;
+	color: $footer-p-a-color;
+	margin-right: 1vh;
+	font-size: 1vw;
 }
