@@ -10,13 +10,13 @@ export default function Formlogin() {
               <div className='col-md-6 side-image'/>
               <div className='col-md-6 right'>
                 <div className='input-box'>
-                  <header>Create account</header>
+                  <header>Crie uma conta</header>
                   <div className='input-field'>
                     <input
                       type='text'
                       className='input'
                       id='email'
-                      required=''
+                      required
                       autoComplete='off'
                     />
                     <label htmlFor='email'>Email</label>
@@ -26,7 +26,7 @@ export default function Formlogin() {
                       type='password'
                       className='input'
                       id='pass'
-                      required=''
+                      required
                     />
                     <label htmlFor='pass'>Password</label>
                   </div>
@@ -35,7 +35,7 @@ export default function Formlogin() {
                   </div>
                   <div className='signin'>
                     <span>
-                      Already have an account? <Link href='#'>Log in here</Link>
+                      Já tem uma conta? <Link href='#'>Logue aqui!</Link>
                     </span>
                   </div>
                 </div>
