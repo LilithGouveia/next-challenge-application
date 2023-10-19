@@ -1,0 +1,26 @@
+@import "./variaveis";
+
+p{
+    margin: 35px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.image-aboutUS{
+    height: 350px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+    border-radius: 7px;
+}
+
+.transparent-square{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-left: 35;
+    margin-right: 35;
+    margin-top: -45vh;
+    // z-index: -1;
+}

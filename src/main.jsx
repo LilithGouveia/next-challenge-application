@@ -6,7 +6,7 @@ import Home from './routes/Home/index.jsx';
 import Login from './routes/Login/index.jsx';
 import Dashboard from './routes/Dashboard/index.jsx';
 import Error from './routes/Error/index.jsx';
-import FaleConosco from './routes/FaleConosco/index.jsx';
+import SobreNos from './routes/SobreNos/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login /> },
       { path: '/dashboard', element: <Dashboard /> },
-      { path: '/faleconosco', element: <FaleConosco /> },
+      { path: '/sobreNos', element: <SobreNos /> },
     ],
   },
 ]);
