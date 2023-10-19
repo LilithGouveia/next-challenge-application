@@ -12,7 +12,11 @@ export default function HeaderMain() {
           </Link>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <Link className="loginBotao" to="/login">
-            Login
+            Login 
+          </Link>
+          <h2>|</h2>
+          <Link className="faleConoscoBotao" to="/faleconosco">
+            Fale Conosco
           </Link>
         </div>
       </nav>
