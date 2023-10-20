@@ -13,7 +13,7 @@ O Grupo **SoftForge** está desenvolvendo um projeto que vai mudar a forma que r
 
 * Home page.
 * Login page.
-* FaleConosco page.
+* Sobre nós page.
 * Dashboard.
 * Alimentação pela api Aquatank (a ser desenvolvida) - Até que esteja pronta, haverá um mock para testes.
 
