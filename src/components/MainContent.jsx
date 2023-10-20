@@ -1,4 +1,4 @@
-import MainImage from '../assets/lukevrogers_A_technological_tree_made_out_of_cyan_nodes_9a8c31ad-6025-4b17-947a-c0d3fe83b979.png';
+// import MainImage from '../assets/lukevrogers_A_technological_tree_made_out_of_cyan_nodes_9a8c31ad-6025-4b17-947a-c0d3fe83b979.png';
 import Teste from "../assets/teste.png";
 import '../style/mainContent.scss';
 
