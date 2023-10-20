@@ -4,15 +4,14 @@ import Time from '../assets/time.png';
 export default function AboutUsContent() {
     return (
         <>
-            <div className=''>
-                <div>
-                    <p className='Title'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, impedit corporis. Vel excepturi qui consequuntur debitis earum ut dicta, beatae ducimus nisi veritatis dolorem impedit facilis iure velit recusandae sint ratione, neque, nesciunt accusantium laboriosam voluptas aliquid. Praesentium totam repellat ea quaerat corrupti quam! Ipsa quam repudiandae totam dolorum voluptas!
+            <div className='container'>
+                <h1>Sobre Nós</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis reprehenderit aspernatur odit doloremque, adipisci vitae accusamus voluptatibus quam, eaque excepturi placeat voluptate assumenda quidem vel eum et. Culpa, ipsam dolorum?
                     </p>
                 
-                </div>
-                
-                <div className='sobre-container'>
+
+                <div className='square-content'>
                     <ul>Lorem, ipsum.</ul>
                     <ul>Delectus, ducimus.</ul>
                     <ul>At, omnis?</ul>
