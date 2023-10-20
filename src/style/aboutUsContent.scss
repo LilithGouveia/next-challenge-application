@@ -1,0 +1,27 @@
+@import "./variaveis";
+
+.title{
+    margin: 35px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.sobre-container{
+    background-color: rgb(128, 128, 128);
+    height: 350px;
+    width: 550px;
+    margin-left: 45px;
+    margin-top: 18vh;
+    color: black;
+    
+    .image-aboutUS{
+        height: 300px;
+        width: 450px;
+        border-radius: 7px;
+        margin: auto;
+        position: absolute;
+        left: 450px;
+        bottom: 10px;
+    }
+
+}

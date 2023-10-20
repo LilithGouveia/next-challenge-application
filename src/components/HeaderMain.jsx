@@ -11,8 +11,8 @@ export default function HeaderSobre() {
             <img src={AquaLogo} alt="logo" className="img-logo" />
           </Link>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-          <Link className="sobreNosBotao" to="/">
-            Home
+          <Link className="sobreNosBotao" to="/sobreNos">
+            Sobre nós
           </Link>
           <h2>|</h2>
           <Link className="loginBotao" to="/login">

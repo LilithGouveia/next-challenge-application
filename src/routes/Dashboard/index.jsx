@@ -10,7 +10,7 @@
 //   );
 // }
 
-import React , {Component, useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import Chart from "react-apexcharts";
 import axios from 'axios';
 const  App =()=> {
