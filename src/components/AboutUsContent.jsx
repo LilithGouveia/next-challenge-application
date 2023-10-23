@@ -1,5 +1,9 @@
 import '../style/AboutUsContent.scss';
 import Time from '../assets/time.png';
+import {BsInstagram} from "react-icons/bs";
+import {BsFacebook} from "react-icons/bs";
+import {BsWhatsapp} from "react-icons/bs";
+
 
 export default function AboutUsContent() {
     return (
@@ -30,7 +34,7 @@ Na SoftForge, não somos apenas uma empresa; somos uma paixão, uma missão, e u
                     <h1>Por Que Escolher a SoftForge?</h1>
                     <ol>
                         <li>Compromisso Inabalável: Somos apaixonados e dedicados à qualidade do ar, comprometidos com nossa missão.</li>
-                        <li>Inovação Sustentável: O AquaTank reflete nosso compromisso com sliuções ecologicamente conscientes e a promoção da sustentabilidade.</li>
+                        <li>Inovação Sustentável: O AquaTank reflete nosso compromisso com soluções ecologicamente conscientes e a promoção da sustentabilidade.</li>
                         <li>Qualidade Intransigente: Cada AquaTank é criado com precisão e qualidade excepcionais, atendendo aos mais altos padrões.</li>
                         <li>Foco no Cliente: Valorizamos nossos clientes e parceiros, buscando ouvir, aprender e crescer juntos.</li>
                     </ol>
@@ -40,6 +44,12 @@ Na SoftForge, não somos apenas uma empresa; somos uma paixão, uma missão, e u
 
                 <div className='square-content'>
                     <img src={Time} className='image-aboutUS'/>
+                </div>
+
+                <div className='social-media'>
+                    <BsInstagram className='icon'/>
+                    <BsFacebook className='icon'/>
+                    <BsWhatsapp className='icon'/>
                 </div>
             </div>
         </>
