@@ -2,7 +2,7 @@ import AquaLogo from "../assets/aquatank_logo.png";
 import { Link } from "react-router-dom";
 import "../style/headerMain.scss";
 
-export default function HeaderSobre() {
+export default function HeaderMain() {
   return (
     <>
       <nav className="navbar navbar-expand-lg">
