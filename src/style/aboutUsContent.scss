@@ -1,0 +1,74 @@
+@import "./variaveis";
+
+.container{
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    color: $title-color;
+}
+
+p{
+    margin: 50px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+ol{
+    margin: 50px;
+    margin-top: 20px;
+}
+
+li{
+    list-style: circle;
+    font-size: 1.1em;
+}
+
+.square-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+
+.image-aboutUS{
+    border-radius: 15px;
+    height: 50%;
+    transition: all .3s ease-in-out;
+    @media screen and (max-width: 767px) {
+        transform: scale(0.8)
+      }
+    @media screen and (max-width: 573px) {
+        transform: scale(0.6)
+    }  
+    @media screen and (max-width: 448px) {
+        transform: scale(0.4)
+        
+    }  
+}
+
+.image-aboutUS:hover{
+    // box-shadow: 0 5em 100px $footer-p-a-color; // -> bordas brilhantes atrás da img
+    scale: 1.1;  //Hover para dar zoom na imagem
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon{
+    font-size: 20px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.icon:hover{
+    color: #E3B663;
+}
+

@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
-import "../../style/dashboard.scss";
 
-function ChartComponent() {
+function ChartComponent({ dataUrl }) {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    // Fazer a solicitação à API
-    fetch('http://localhost:3000/fetchData')
+  const fetchData = () => {
+    // Fazer a solicitação à API com a URL especificada
+    fetch(dataUrl)
       .then((response) => response.json())
       .then((responseData) => {
-        // Verificar se responseData contém a matriz contextResponses
         if (Array.isArray(responseData.contextResponses)) {
           // Acessar a matriz de atributos
           const attributes = responseData.contextResponses[0].contextElement.attributes;
-  
+
           // Verificar se attributes é uma matriz e não está vazia
           if (Array.isArray(attributes) && attributes.length > 0) {
             // Extrair os dados necessários para o gráfico
@@ -33,25 +31,20 @@ function ChartComponent() {
       .catch((error) => {
         console.error('Erro ao acessar a API: ' + error);
       });
-  }, []);
+  };
+
+  useEffect(() => {
+    // Inicialmente, carregue os dados do gráfico
+    fetchData();
+  }, [dataUrl]);
 
   const options = {
     chart: {
-      id: 'basic-bar',
+      id: 'chart',
     },
     xaxis: {
       type: 'datetime',
     },
-    responsive: [
-      {
-        breakpoint: 768, // Quando a largura da tela for 768px ou menos
-        options: {
-          chart: {
-            height: 250, // Altura do gráfico
-          },
-        },
-      },
-    ],
   };
 
   const series = [
@@ -62,8 +55,8 @@ function ChartComponent() {
   ];
 
   return (
-    <div className="chart-container">
-      <ReactApexChart options={options} series={series} type="line" height={350}/>
+    <div className="chart">
+      <ReactApexChart options={options} series={series} type="line" height={350} />
     </div>
   );
 }

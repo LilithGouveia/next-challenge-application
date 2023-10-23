@@ -20,4 +20,108 @@ body {
 	color: $footer-p-a-color;
 	margin-right: 1vh;
 	font-size: 1vw;
+  @media screen and (max-width:1266px){
+    font-size: 1.2vw;
+  }
+  @media screen and (max-width:1132px){
+    font-size: 1.4vw;
+  }
+  @media screen and (max-width:969px){
+    font-size: 1.6vw;
+  }
+  @media screen and (max-width:729px){
+    font-size: 1.8vw;
+  }
+  @media screen and (max-width:639px){
+    font-size: 2vw;
+  }
+  @media screen and (max-width:576px){
+    font-size: 2.2vw;
+  }
+  @media screen and (max-width:491px){
+    font-size: 2.4vw;
+  }
+  @media screen and (max-width:401px){
+    font-size: 2.6vw;
+  }
+  @media screen and (max-width:331px){
+    font-size: 2.8vw;
+  }
+}
+
+.sobreNosBotao {
+  text-decoration: none;
+  color: $footer-p-a-color;
+  margin-right: 1vh;
+  font-size: 1vw;
+  @media screen and (max-width:1266px){
+    font-size: 1.2vw;
+  }
+  @media screen and (max-width:1132px){
+    font-size: 1.4vw;
+  }
+  @media screen and (max-width:969px){
+    font-size: 1.6vw;
+  }
+  @media screen and (max-width:729px){
+    font-size: 1.8vw;
+  }
+  @media screen and (max-width:639px){
+    font-size: 2vw;
+  }
+  @media screen and (max-width:576px){
+    font-size: 2.2vw;
+  }
+  @media screen and (max-width:491px){
+    font-size: 2.4vw;
+  }
+  @media screen and (max-width:401px){
+    font-size: 2.6vw;
+  }
+  @media screen and (max-width:331px){
+    font-size: 2.8vw;
+  }
+}
+
+h2{
+  color: $footer-p-a-color;
+  margin-right: 1vh;
+  font-size: 1vw;
+  margin-top: 1vh;
+  @media screen and (max-width:1266px){
+    font-size: 1.2vw;
+  }
+  @media screen and (max-width:1132px){
+    font-size: 1.4vw;
+  }
+  @media screen and (max-width:969px){
+    font-size: 1.6vw;
+  }
+  @media screen and (max-width:791px){
+    font-size: 1.8vw;
+  }
+  @media screen and (max-width:758px){
+    font-size: 2vw;
+  }
+  @media screen and (max-width:690px){
+    font-size: 2.2vw;
+  }
+  @media screen and (max-width:657px){
+    font-size: 2.4vw;
+  }
+  @media screen and (max-width:621px){
+    font-size: 2.6vw;
+  }
+  @media screen and (max-width:462px){
+    font-size: 2.8vw;
+  }
+  @media screen and (max-width:386px){
+    font-size: 3vw;
+  }
+  @media screen and (max-width:386px){
+    font-size: 3.2vw;
+  }
+  @media screen and (max-width:328px){
+    font-size: 3.4vw;
+  }
 }
