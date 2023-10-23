@@ -14,28 +14,31 @@ p{
     text-align: justify;
 }
 
+ol{
+    margin: 50px;
+    margin-top: 20px;
+}
+
+li{
+    list-style: circle;
+    font-size: 1.1em;
+}
 
 .square-content{
-    background-color: rgb(128, 128, 128);
-    height: 350px;
-    width: 550px;
-    margin-left: 45px;
-    margin-top: 10vh;
-    margin: 65px 150px;
-    
-    
-    .image-aboutUS{
-        height: 300px;
-        width: 450px;
-        border-radius: 7px;
-        margin: 0 200px;
-        position: absolute;
-        left: 450px;
-        bottom: 10px;
-    }
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 50px;
+}
 
-    ul{
-        color: black;
-        padding-top: 20px;
-    }
+.image-aboutUS{
+    border-radius: 15px;
+    height: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.image-aboutUS:hover{
+    // box-shadow: 0 5em 100px $footer-p-a-color; -> bordas brilhantes atrás da img
+    scale: 1.1;
 }
