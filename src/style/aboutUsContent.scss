@@ -6,7 +6,7 @@
 
 h1{
     text-align: center;
-    color: $font-color;
+    color: $title-color;
 }
 
 p{
@@ -41,8 +41,8 @@ li{
 }
 
 .image-aboutUS:hover{
-    // box-shadow: 0 5em 100px $footer-p-a-color; -> bordas brilhantes atrás da img
-    // scale: 1.1; hover para zoom na imagem
+    // box-shadow: 0 5em 100px $footer-p-a-color; // -> bordas brilhantes atrás da img
+    scale: 1.1;  //Hover para dar zoom na imagem
 }
 
 .social-media{

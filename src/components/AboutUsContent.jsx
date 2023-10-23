@@ -13,7 +13,7 @@ export default function AboutUsContent() {
                     <p>
                     Bem-vindo à SoftForge: Pioneiros na Revolução da Qualidade do Ar!
 
-Na SoftForge, não somos apenas uma empresa; somos uma paixão, uma missão, e uma promessa de um futuro mais saudável e vibrante. Com um compromisso inabalável em melhorar a qualidade de vida das pessoas, nossa jornada é impulsionada pela inovação, sustentabilidade e o desejo sincero de criar um mundo onde todos possam respirar com facilidade.
+                    Na SoftForge, não somos apenas uma empresa; somos uma paixão, uma missão, e uma promessa de um futuro mais saudável e vibrante. Com um compromisso inabalável em melhorar a qualidade de vida das pessoas, nossa jornada é impulsionada pela inovação, sustentabilidade e o desejo sincero de criar um mundo onde todos possam respirar com facilidade.
                     </p>
 
                     <h1>Quem somos?</h1>
@@ -23,7 +23,7 @@ Na SoftForge, não somos apenas uma empresa; somos uma paixão, uma missão, e u
 
                     <h1>AquaTank: O Futuro da Qualidade do Ar</h1>
                     <p>
-                    Nosso projeto principal, o "AquaTank," é uma revolução em termos de qualidade do ar. O AquaTank é mais do que um produto; é uma obra de arte da engenharia que combina a beleza de um aquário com o poder das algas para purificar o ar que você respira. As algas absorvem CO2 e liberam oxigênio, tornando o ambiente mais fresco e saudável. O AquaTank é uma maneira eficaz e natural de melhorar a qualidade do ar em sua casa ou local de trabalho.
+                    Nosso projeto principal, o <q>AquaTank</q>, é uma revolução em termos de qualidade do ar. O AquaTank é mais do que um produto; é uma obra de arte da engenharia que combina a beleza de um aquário com o poder das algas para purificar o ar que você respira. As algas absorvem CO2 e liberam oxigênio, tornando o ambiente mais fresco e saudável. O AquaTank é uma maneira eficaz e natural de melhorar a qualidade do ar em sua casa ou local de trabalho.
                     </p>
 
                     <h1>Nossa Missão:</h1>
