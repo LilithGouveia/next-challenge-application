@@ -6,6 +6,7 @@
 
 h1{
     text-align: center;
+    color: $font-color;
 }
 
 p{
@@ -32,6 +33,7 @@ li{
     margin-bottom: 50px;
 }
 
+
 .image-aboutUS{
     border-radius: 15px;
     height: 50%;
@@ -40,5 +42,22 @@ li{
 
 .image-aboutUS:hover{
     // box-shadow: 0 5em 100px $footer-p-a-color; -> bordas brilhantes atrás da img
-    scale: 1.1;
+    // scale: 1.1; hover para zoom na imagem
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon{
+    font-size: 20px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.icon:hover{
+    color: #E3B663;
 }
