@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import "../../style/dashboard.scss";
 
-function ChartComponent({ dataUrl }) {
+function ChartComponent() {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    // Fazer a solicitação à API com a URL especificada
-    fetch(dataUrl)
+    // Fazer a solicitação à API
+    fetch('http://localhost:3000/c')
       .then((response) => response.json())
       .then((responseData) => {
+        // Verificar se responseData contém a matriz contextResponses
         if (Array.isArray(responseData.contextResponses)) {
           // Acessar a matriz de atributos
           const attributes = responseData.contextResponses[0].contextElement.attributes;
@@ -36,11 +38,19 @@ function ChartComponent({ dataUrl }) {
   useEffect(() => {
     // Inicialmente, carregue os dados do gráfico
     fetchData();
-  }, [dataUrl]);
+
+    // Em seguida, configure um intervalo para atualizar os dados do gráfico a cada X milissegundos (por exemplo, a cada 5 segundos)
+    const interval = setInterval(() => {
+      fetchData();
+    }, 5000); // Atualize a cada 5 segundos (ajuste conforme necessário)
+
+    // Lembre-se de limpar o intervalo quando o componente for desmontado para evitar vazamentos de memória
+    return () => clearInterval(interval);
+  }, []);
 
   const options = {
     chart: {
-      id: 'chart',
+      id: 'basic-bar',
     },
     xaxis: {
       type: 'datetime',
