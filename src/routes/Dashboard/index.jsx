@@ -1,66 +1,64 @@
-// import '../../style/dashboard.scss';
+import React, { useEffect, useState } from 'react';
+import ReactApexChart from 'react-apexcharts';
 
-// export default function Dashboard() {
-//   return (
-//     <>
-//       <div className='container'>
-//         <h1>oi dash</h1>
-//       </div>
-//     </>
-//   );
-// }
+function ChartComponent({ dataUrl }) {
+  const [data, setData] = useState([]);
 
-import {useState, useEffect} from 'react';
-import Chart from "react-apexcharts";
-import axios from 'axios';
-const  App =()=> {
-  const [category, setCategory] = useState([])
-  const [data, setData] = useState([])
+  const fetchData = () => {
+    // Fazer a solicitação à API com a URL especificada
+    fetch(dataUrl)
+      .then((response) => response.json())
+      .then((responseData) => {
+        if (Array.isArray(responseData.contextResponses)) {
+          // Acessar a matriz de atributos
+          const attributes = responseData.contextResponses[0].contextElement.attributes;
+
+          // Verificar se attributes é uma matriz e não está vazia
+          if (Array.isArray(attributes) && attributes.length > 0) {
+            // Extrair os dados necessários para o gráfico
+            const chartData = attributes[0].values.map((item) => ({
+              x: new Date(item.recvTime).getTime(),
+              y: item.attrValue,
+            }));
+            setData(chartData);
+          } else {
+            console.error('A matriz de atributos está vazia ou não é uma matriz.');
+          }
+        } else {
+          console.error('A resposta da API não contém a matriz contextResponses.');
+        }
+      })
+      .catch((error) => {
+        console.error('Erro ao acessar a API: ' + error);
+      });
+  };
+
   useEffect(() => {
-    const age = [];
-    const salary = [];
+    // Inicialmente, carregue os dados do gráfico
+    fetchData();
+  }, [dataUrl]);
 
-    axios.get("http://46.17.108.113:8666/STH/v1/contextEntities/type/Lamp/id/urn:ngsi-ld:Lamp:171/attributes/temperature?hLimit=10&hOffset=0").then(response =>{
-        console.log("response", response)
-        response.data.data.map(item => {
-          console.log("item", item)
-            age.push(item.employee_age);
-            salary.push(item.employee_salary)
-        })
-        setCategory(salary)
-        setData(age)
-        // setObject({
-        //   chart: {
-        //     id: 'apexchart-example'
-        //   },
-        //   xaxis: {
-        //     categories: salary
-        //   }
-        // })
-        // setSeries([{
-        //   name: 'series-1',
-        //   data: age
-        // }])
-        console.log("age", age, salary)
-    }).catch(e => {
-        alert(e);
-    })
-}, [])
+  const options = {
+    chart: {
+      id: 'chart',
+    },
+    xaxis: {
+      type: 'datetime',
+    },
+  };
+
+  const series = [
+    {
+      name: 'Valores',
+      data: data,
+    },
+  ];
 
   return (
-    <Chart options={{
-      chart: {
-        id: 'apexchart-example'
-      },
-      xaxis: {
-        categories: category
-      }
-    }} 
-    series={[{
-      name: 'series-1',
-      data: data
-    }]} type="line" width={800} height={500} />
-  )
+    <div className="chart">
+      <ReactApexChart options={options} series={series} type="line" height={350} />
+    </div>
+  );
 }
 
-export default App
+export default ChartComponent;
