@@ -15,7 +15,7 @@ export default function MainContent() {
           Somos a SoftForge, os guardiões do ar puro. Com o AquaTank, transformamos cada suspiro em uma vitória para a qualidade de vida. Junte-se a nós. Seja um herói da saúde, todos os dias.
           </p>
 
-          <Link className="loginbtn">FAÇA SEU LOGIN!</Link>
+          <Link className="loginbtn" to="/login">FAÇA SEU LOGIN!</Link>
           
         </div>
         <img src={Teste} className='image-main'/>
