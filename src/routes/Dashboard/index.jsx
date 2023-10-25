@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import { Link } from 'react-router-dom';
 import "../../style/dashboard.scss";
 
 function ChartComponent() {
@@ -8,6 +9,7 @@ function ChartComponent() {
   const [dataT, setDataT] = useState([]);
   const [dataH, setDataH] = useState([]);
   const [dataL, setDataL] = useState([]);
+  const [dataB, setDataB] = useState([]);
 
   const fetchData = (url, setData) => {
     fetch(url)
@@ -40,6 +42,7 @@ function ChartComponent() {
     fetchData('http://localhost:3000/t', setDataT);
     fetchData('http://localhost:3000/h', setDataH);
     fetchData('http://localhost:3000/l', setDataL);
+    fetchData('http://localhost:3000/b', setDataB);
 
     // Em seguida, configure um intervalo para atualizar os dados dos gráficos a cada X milissegundos (por exemplo, a cada 5 segundos)
     const interval = setInterval(() => {
@@ -48,6 +51,7 @@ function ChartComponent() {
       fetchData('http://localhost:3000/t', setDataT);
       fetchData('http://localhost:3000/h', setDataH);
       fetchData('http://localhost:3000/l', setDataL);
+      fetchData('http://localhost:3000/b', setDataB);
     }, 5000); // Atualize a cada 5 segundos (ajuste conforme necessário)
 
     // Lembre-se de limpar o intervalo quando o componente for desmontado para evitar vazamentos de memória
@@ -72,11 +76,15 @@ function ChartComponent() {
     xaxis: {
       type: 'datetime',
     },
+    stroke: {
+      curve: 'smooth' // Adicione esta opção para suavizar as linhas do gráfico
+    },
   };
 
   return (
     <div className="chart-container">
-      <h1 className='titulo'>Overview</h1>
+      <h1 className='titulo'>Quadro de Gráficos</h1>
+      <button className='botaoVoltar'><Link to="/">Home</Link></button>
       <div className="top-row">
         <div className="chart">
           <div className="chart-label">CO2</div>
@@ -100,6 +108,10 @@ function ChartComponent() {
       <div className="chart-bottom">
         <div className="chart-label">Luminosidade</div>
         <ReactApexChart options={chartOptions} series={[{ name: 'Luminosidade', data: dataL }]} type="line" height={350} />
+      </div>
+      <div className="chart-bottom">
+        <div className="chart-label">Boia</div>
+        <ReactApexChart options={chartOptions} series={[{ name: 'Boia', data: dataB }]} type="bar" height={350} />
       </div>
     </div>
   );
