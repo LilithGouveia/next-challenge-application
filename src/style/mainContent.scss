@@ -4,17 +4,23 @@
   display: flex;
   margin: 4vh;
   .initial-text {
+    color: #6BF8D9;
     margin-left: 7vh;
     font-family: $font;
-    margin-top: 7vh;
-    font-size: 2vh;
+    margin-top: 7.5vh;
+    font-size: 33px;
+    font-weight: bold;
     text-align: center;
-    width: 50%;
+    width: 55%;
     @media screen and (max-width: 768px) {
       margin-left: 0;
-      font-size: 2vh;
+      font-size: 33px;
       width: 100%;
     }
+  }
+
+  .second-text{
+    font-size: 15px;
   }
 
   .image-main {
@@ -28,4 +34,19 @@
       display: none;
     }
   }
+}
+
+.loginbtn{
+  border-radius: 0 0 20px 0;
+  margin: 5.5vh;
+  text-decoration: none;
+  color: #fff;
+  padding: .923rem;
+  background-color: #e4ae3b;
+  transition: all .4s ease-in-out;
+}
+
+.loginbtn:hover{
+  color: #fff;
+  background-color: #997532;
 }
