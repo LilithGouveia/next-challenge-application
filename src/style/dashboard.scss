@@ -1,7 +1,66 @@
 .chart-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%; /* Ajusta a largura do gráfico à largura do contêiner pai */
-    height: 50vh; /* Define a altura em 50% da altura da janela */
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.titulo {
+  color: #ddd;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.top-row, .bottom-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.chart {
+  flex: 1;
+  min-width: calc(50% - 10px);
+  padding: 10px;
+  background-color: #e3b663;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.chart-label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.chart-bottom {
+  flex: 1;
+  min-width: calc(50% - 10px);
+  padding: 10px;
+  background-color: #e3b663;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+/* Altera a cor do ícone da exportação e do texto para a cor do gráfico (azul) */
+.apexcharts-menu-item.exportCSV {
+  color: #2196F3; /* Cor azul do gráfico, ajuste conforme necessário */
+}
+
+.apexcharts-menu-item.exportPNG {
+  color: #2196F3; /* Cor azul do gráfico, ajuste conforme necessário */
+}
+
+.apexcharts-menu-item.exportSVG {
+  color: #2196F3; /* Cor azul do gráfico, ajuste conforme necessário */
+}
