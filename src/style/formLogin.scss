@@ -140,3 +140,30 @@ span a:hover {
     width: 100%;
   }
 }
+
+.homebtn{
+  top: 84%;
+  left: 45%;
+  color: #fff;
+  text-decoration: none;
+  padding: 43%;
+  // font-size: 1em;
+}
+
+.homebtn:hover{
+  color:#fff;
+}
+
+.backhome {
+  display: block;
+  border: 2px solid #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px; 
+  transition: all .4s ease-in-out
+}
+
+.backhome:hover{
+  border: 2px solid #fff;
+  background-color: #cea55b;
+}

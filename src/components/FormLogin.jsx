@@ -36,8 +36,11 @@ export default function FormLogin() {
                   <div className='signin'>
                     <span>
                       Não tem uma conta? <Link href='#'>Inscreva-se</Link>
-                    </span>
+                    </span>  
                   </div>
+                  <div className='backhome'>
+                    <Link className="homebtn" to="/">Home</Link>
+                  </div> 
                 </div>
               </div>
             </div>
