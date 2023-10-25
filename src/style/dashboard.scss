@@ -6,10 +6,37 @@
 }
 
 .titulo {
-  color: #ddd;
-  margin: 20px auto;
-  text-align: center;
-  font-size: 3rem;
+  color: #fff;
+  margin: 20px;
+  text-align: left;
+  font-size: 4rem;
+}
+
+.botaoVoltar{
+  background-color: #e3b663;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  min-width: 10%;
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  &:hover{
+    border: 3px solid #fff;
+    background-color: #cea55b;
+  }
 }
 
 .top-row, .bottom-row {
@@ -25,12 +52,16 @@
   min-width: calc(50% - 10px);
   padding: 10px;
   background-color: #e3b663;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   margin: 5px;
+  &:hover{
+    border: 3px solid #fff;
+    font-size: 30px;
+  }
 }
 
 .chart-label {
@@ -44,12 +75,41 @@
   min-width: calc(50% - 10px);
   padding: 10px;
   background-color: #e3b663;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   font-size: 20px;
+  margin: 5px;
+  &:hover{
+    border: 3px solid #fff;
+    font-size: 30px;
+  }
+}
+
+.chart-boia {
+  flex: 1;
+  min-width: calc(50% - 10px);
+  padding: 10px;
+  background-color: #e3b663;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 5px; /* Adicione um espaçamento de 5px entre os gráficos */
+}
+
+/* Estilo personalizado para o tooltip do gráfico */
+.apexcharts-tooltip {
+  background: #2196F3; /* Cor de fundo azul */
+  color: #2196F3; /* Cor do texto branco */
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
 }
 
 /* Altera a cor do ícone da exportação e do texto para a cor do gráfico (azul) */
