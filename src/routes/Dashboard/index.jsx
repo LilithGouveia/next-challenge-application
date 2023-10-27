@@ -5,13 +5,13 @@ import "../../style/dashboard.scss";
 
 function ChartComponent() {
   const [dataC, setDataC] = useState([]);
+  const [dataO, setDataO] = useState([]);
   const [dataV, setDataV] = useState([]);
   const [dataT, setDataT] = useState([]);
   const [dataH, setDataH] = useState([]);
   const [dataL, setDataL] = useState([]);
   const [dataB, setDataB] = useState([]);
 
-  const [dataO, setDataO] = useState([]);
 
   const fetchData = (url, setData) => {
     fetch(url)
@@ -25,6 +25,12 @@ function ChartComponent() {
               y: item.attrValue,
             }));
             setData(chartData);
+
+            const oxygenData = chartData.map((item) => ({
+              x: item.x,
+              y: (item.y / 10000) * 6.75,
+            }));
+            setDataO(oxygenData);
           } else {
             console.error('A matriz de atributos está vazia ou não é uma matriz.');
           }
@@ -37,26 +43,14 @@ function ChartComponent() {
       });
   };
 
-  const convertAndSetDataO = (data) => {
-    const oxygenData = data.map((item) => ({
-      x: item.x,
-      y: (item.y / 10000) * 6.75,
-    }));
-    setDataO(oxygenData);
-  };
-
   useEffect(() => {
-    // Inicialmente, carregue os dados de todos os gráficos
     fetchData('http://localhost:3000/c', setDataC);
     fetchData('http://localhost:3000/v', setDataV);
     fetchData('http://localhost:3000/t', setDataT);
     fetchData('http://localhost:3000/h', setDataH);
     fetchData('http://localhost:3000/l', setDataL);
     fetchData('http://localhost:3000/b', setDataB);
-    
-    fetchData('http://localhost:3000/c', setDataO);
 
-    // Em seguida, configure um intervalo para atualizar os dados dos gráficos a cada X milissegundos (por exemplo, a cada 5 segundos)
     const interval = setInterval(() => {
       fetchData('http://localhost:3000/c', setDataC);
       fetchData('http://localhost:3000/v', setDataV);
@@ -64,19 +58,11 @@ function ChartComponent() {
       fetchData('http://localhost:3000/h', setDataH);
       fetchData('http://localhost:3000/l', setDataL);
       fetchData('http://localhost:3000/b', setDataB);
-
-      fetchData('http://localhost:3000/c', setDataO);
-      convertAndSetDataO(newDataC); // Aplica a conversão e atualiza os dados de Oxigênio após receber novos dados de CO2
-      setDataC(newDataC);
-    }, 5000); // Atualize a cada 5 segundos (ajuste conforme necessário)
+    }, 6000);
 
     // Lembre-se de limpar o intervalo quando o componente for desmontado para evitar vazamentos de memória
     return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    convertAndSetDataO(dataC); // Aplica a conversão e atualiza os dados de Oxigênio sempre que os dados de CO2 mudam.
-  }, [dataC]);
 
   const chartOptions = {
     chart: {
@@ -103,7 +89,6 @@ function ChartComponent() {
 
   return (
     <div className="chart-container">
-
       <h1 className='titulo'>Quadro de Gráficos</h1>
       <button className='botaoVoltar'><Link to="/">Home</Link></button>
 
