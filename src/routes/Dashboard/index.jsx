@@ -12,8 +12,7 @@ function ChartComponent() {
   const [dataL, setDataL] = useState([]);
   const [dataB, setDataB] = useState([]);
 
-
-  const fetchData = (url, setData) => {
+  const fetchData = (url, setData, isCO2 = false) => {
     fetch(url)
       .then((response) => response.json())
       .then((responseData) => {
@@ -26,11 +25,14 @@ function ChartComponent() {
             }));
             setData(chartData);
 
-            const oxygenData = chartData.map((item) => ({
-              x: item.x,
-              y: (item.y / 10000) * 6.75,
-            }));
-            setDataO(oxygenData);
+            if (isCO2) {
+              // Aplicar conversão de CO2 para O2 somente se isCO2 for true
+              const oxygenData = chartData.map((item) => ({
+                x: item.x,
+                y: (item.y / 10000) * 6.75,
+              }));
+              setDataO(oxygenData);
+            }
           } else {
             console.error('A matriz de atributos está vazia ou não é uma matriz.');
           }
@@ -44,7 +46,7 @@ function ChartComponent() {
   };
 
   useEffect(() => {
-    fetchData('http://localhost:3000/c', setDataC);
+    fetchData('http://localhost:3000/c', setDataC, true); // Defina isCO2 como true para CO2
     fetchData('http://localhost:3000/v', setDataV);
     fetchData('http://localhost:3000/t', setDataT);
     fetchData('http://localhost:3000/h', setDataH);
@@ -52,7 +54,7 @@ function ChartComponent() {
     fetchData('http://localhost:3000/b', setDataB);
 
     const interval = setInterval(() => {
-      fetchData('http://localhost:3000/c', setDataC);
+      fetchData('http://localhost:3000/c', setDataC, true); // Defina isCO2 como true para CO2
       fetchData('http://localhost:3000/v', setDataV);
       fetchData('http://localhost:3000/t', setDataT);
       fetchData('http://localhost:3000/h', setDataH);
@@ -68,22 +70,28 @@ function ChartComponent() {
     chart: {
       id: 'basic-line-chart',
       toolbar: {
-        show: true, // Exibir a barra de ferramentas do gráfico
+        show: true,
         tools: {
-          zoom: true, // Habilitar a ferramenta de zoom
-          pan: true, // Habilitar a ferramenta de pan
-          reset: true, // Habilitar a ferramenta de reset (voltar ao estado inicial)
+          zoom: true,
+          pan: true,
+          reset: true,
         },
       },
       zoom: {
-        enabled: true, // Habilitar o zoom
+        enabled: true,
       },
     },
     xaxis: {
       type: 'datetime',
     },
+    yaxis: {
+      forceNiceScale: false,
+      labels: {
+        formatter: (value) => value.toFixed(2),
+      },
+    },
     stroke: {
-      curve: 'smooth' // Adicione esta opção para suavizar as linhas do gráfico
+      curve: 'smooth',
     },
   };
 
