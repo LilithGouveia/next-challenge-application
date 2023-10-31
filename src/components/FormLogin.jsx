@@ -31,7 +31,10 @@ export default function FormLogin() {
                     <label htmlFor='pass'>Senha</label>
                   </div>
                   <div className='input-field'>
-                    <input type='submit' className='submit' value='Entrar' />
+                    {/* <input type='submit' className='submit' value='Entrar' /> */}
+                    <button className='loginPoha'><Link to="/dashboard">Login</Link></button>
+                    {/* <div className='submit'>
+                    </div> */}
                   </div>
                   <div className='signin'>
                     <span>
