@@ -1,4 +1,4 @@
-# Projeto Next Aplication
+# Projeto Next Application
 
 Repositório referente ao NEXT em 2023 e a última entrega da Challenge FIAP - Desafios IBM.
 
@@ -23,23 +23,26 @@ Junte-se a nós nessa jornada transformadora em direção a cidades mais verdes 
 
 --- 
 
-## Passo a Passo para Acesso:
+## Pré-requisitos
 
-### Guia Rápido:
-### 1. Preparação do Ambiente:
+Certifique-se de ter o Node.js instalado em seu sistema antes de começar. Caso ainda não tenha, você pode baixá-lo [aqui](https://nodejs.org/en).
 
-* Instale as bibliotecas necessárias e exporte para a IDE do Arduino.
-* Conecte os sensores às portas designadas no ESP32, atentando para as conexões GND e VCC.
-* Alimente o ESP32 e faça o upload.
+---
 
-### 2. Configuração da API:
-* Exporte a pasta da API.
-* Execute **npm install**.
-* Para iniciar o programa, utilize o comando **node script js**.
+## Configuração do Site
 
-### 3. Configuração do Site:
-* Exporte a pasta do site.
-* Execute **npm install**.
-* Inicie o site com o comando **npm run dev**.
+1. Baixe a pasta do repositório.
+2. Abra a pasta no Visual Studio Code (VSCode).
+3. No VSCode, abra o terminal.
+4. Execute o comando `npm install` para instalar as dependências necessárias.
+5. Após a instalação, rode o comando `npm run dev` para colocar o site no ar.
 
-### Com esses passos, você terá acesso aos gráficos e poderá acompanhar os dados em tempo de execução.
+## Configuração da API do Site
+
+Para configurar a API do site, acesse o [link para o repositório da API](https://github.com/TomazVC/api-file-AquaTank.git) que contém todas as informações necessárias.
+
+## Configuração da IDE dos Sensores
+
+Para configurar a IDE dos sensores, acesse o [link para o repositório da IDE dos sensores](https://github.com/TomazVC/ide-fiware-file-AquaTank.git) que contém todas as informações necessárias.
+
+Agora você está pronto para explorar o site e integrá-lo com a API e a IDE dos sensores. Divirta-se!
