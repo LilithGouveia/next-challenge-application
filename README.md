@@ -55,6 +55,15 @@ Agora você está pronto para explorar o site e integrá-lo com a API e a IDE do
 
 ⚠ **Atenção! Esse grupo possui integrantes em salas diversas.** ⚠
 
+
+### Com esses passos, você terá acesso aos gráficos e poderá acompanhar os dados em tempo de execução.
+
+# Pessoas desenvolvedoras:
+
+⚠ **Atenção! Esse grupo possui integrantes em salas diversas.** ⚠
+
+=======
+
 |       Aluno       |     Rm     |   Turma   |
 | ----------------- | ---------- | --------- |
 | Gustavo Cristiano |   551924   |   1ESPF   |
