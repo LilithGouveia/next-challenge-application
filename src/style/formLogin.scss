@@ -96,6 +96,8 @@ i {
 .input-field .input:valid {
   border-bottom: 1px solid black;
 }
+.submit {
+  text-align: center;
 // .submit {
 //   border: none;
 //   outline: none;
@@ -105,7 +107,7 @@ i {
 //   transition: 0.4s;
 //   text-align: center;
 //   padding-top: 10px;
-// }
+}
 .loginPoha{
   background-color: #6de0c7;
   border: none;
