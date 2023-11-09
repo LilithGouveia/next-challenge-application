@@ -59,9 +59,6 @@ export default function FormLogin() {
                   <div className='input-field'>
                   </div>
                   <div className='signin'>
-                    <span>
-                      Não tem uma conta? <Link to='#'>Inscreva-se</Link>
-                    </span>
                     {/* <input type='submit' className='submit' value='Entrar' /> */}
                     <button className='loginPoha'><Link to="/dashboard">Login</Link></button>
                     {/* <div className='submit'>
