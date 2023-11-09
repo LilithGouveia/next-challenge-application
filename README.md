@@ -43,3 +43,15 @@ Junte-se a nós nessa jornada transformadora em direção a cidades mais verdes 
 * Inicie o site com o comando **npm run dev**.
 
 ### Com esses passos, você terá acesso aos gráficos e poderá acompanhar os dados em tempo de execução.
+
+# Pessoas desenvolvedoras:
+
+⚠ **Atenção! Esse grupo possui integrantes em salas diversas.** ⚠
+
+|       Aluno       |     Rm     |   Turma   |
+| ----------------- | ---------- | --------- |
+| Gustavo Cristiano |   551924   |   1ESPF   |
+| Luna Gouvea       |   550836   |   1ESPV   |
+| Pedro P. Santos   |   552047   |   1ESPF   |
+| Rony Ken Nagai    |   551549   |   1ESPF   |
+| Tomáz V. Carballo |   551417   |   1ESPF   |
