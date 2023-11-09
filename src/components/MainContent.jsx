@@ -11,10 +11,14 @@ export default function MainContent() {
           <p className='initial-text'>
             O HERÓI SILENCIOSO QUE LUTA PELA SUA QUALIDADE DE VIDA.
           </p>
-          <p className='second-text'>
-          Somos a SoftForge, os guardiões do ar puro. Com o AquaTank, transformamos cada suspiro em uma vitória para a qualidade de vida. Junte-se a nós. Seja um herói da saúde, todos os dias.
-          </p>
+          <div className="blocao">
 
+            <p className='second-text'>
+            Somos a SoftForge, os guardiões do ar puro. Com o AquaTank, transformamos cada suspiro em uma vitória para a qualidade de vida.
+            </p>
+            <p className='second-text'>Junte-se a nós. Seja um herói da saúde, todos os dias.</p>
+            
+          </div>
           <Link className="loginbtn" to="/login">FAÇA SEU LOGIN!</Link>
           
         </div>

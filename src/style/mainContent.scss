@@ -5,12 +5,13 @@
   margin: 4vh;
   .initial-text {
     color: #6BF8D9;
-    margin-left: 7vh;
+    margin-left: 20vh;
     font-family: $font;
     margin-top: 7.5vh;
+    margin-bottom: 25px;
     font-size: 33px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     width: 55%;
     @media screen and (max-width: 768px) {
       margin-left: 0;
@@ -21,12 +22,19 @@
 
   .second-text{
     font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 20vh;
+  }
+
+  .blocao{
+    margin-bottom: 25px;
   }
 
   .image-main {
-    margin-right: 3vh;
+    // margin-right: 4vh;
+    margin-left: 40vh;
     margin-top: 1.5vh;
-    opacity: 0.7;
+    opacity: 0.80;
     max-width: 70vh;
     min-width: 10vh;
     height: auto;
@@ -38,7 +46,9 @@
 
 .loginbtn{
   border-radius: 0 0 20px 0;
-  margin: 5.5vh;
+  // margin: 5.5vh;
+  margin-top: 30px;
+  margin-left: 20vh;
   text-decoration: none;
   color: #fff;
   padding: .923rem;
