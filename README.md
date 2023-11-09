@@ -41,6 +41,8 @@ Certifique-se de ter o Node.js instalado em seu sistema antes de começar. Caso 
 
 Para configurar a API do site, acesse o [link para o repositório da API](https://github.com/TomazVC/api-file-AquaTank.git) que contém todas as informações necessárias.
 
+Com esses passos, você terá acesso aos gráficos e poderá acompanhar os dados em tempo de execução.
+
 ## Configuração da IDE dos Sensores
 
 Para configurar a IDE dos sensores, acesse o [link para o repositório da IDE dos sensores](https://github.com/TomazVC/ide-fiware-file-AquaTank.git) que contém todas as informações necessárias.
@@ -50,13 +52,6 @@ Para configurar a IDE dos sensores, acesse o [link para o repositório da IDE do
 Agora você está pronto para explorar o site e integrá-lo com a API e a IDE dos sensores. Divirta-se!
 
 ---
-
-# Pessoas desenvolvedoras:
-
-⚠ **Atenção! Esse grupo possui integrantes em salas diversas.** ⚠
-
-
-### Com esses passos, você terá acesso aos gráficos e poderá acompanhar os dados em tempo de execução.
 
 # Pessoas desenvolvedoras:
 
