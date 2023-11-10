@@ -62,7 +62,6 @@ Agora você está pronto para explorar o site e integrá-lo com a API e a IDE do
 
 ⚠ **Atenção! Esse grupo possui integrantes em salas diversas.** ⚠
 
-=======
 
 |       Aluno       |     Rm     |   Turma   |
 | ----------------- | ---------- | --------- |
