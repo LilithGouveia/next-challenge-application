@@ -16,7 +16,7 @@ export default function HeaderAboutUs() {
           </Link>
           <h2>|</h2>
           <Link className="loginBotao" to="/login">
-            Login 
+            Login
           </Link>
         </div>
       </nav>

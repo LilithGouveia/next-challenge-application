@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import ReactApexChart from "react-apexcharts";
+import { Link } from "react-router-dom";
 import "../../style/dashboard.scss";
 
 function ChartComponent() {
@@ -17,7 +17,8 @@ function ChartComponent() {
       .then((response) => response.json())
       .then((responseData) => {
         if (Array.isArray(responseData.contextResponses)) {
-          const attributes = responseData.contextResponses[0].contextElement.attributes;
+          const attributes =
+            responseData.contextResponses[0].contextElement.attributes;
           if (Array.isArray(attributes) && attributes.length > 0) {
             const chartData = attributes[0].values.map((item) => ({
               x: new Date(item.recvTime).getTime(),
@@ -34,32 +35,36 @@ function ChartComponent() {
               setDataO(oxygenData);
             }
           } else {
-            console.error('A matriz de atributos está vazia ou não é uma matriz.');
+            console.error(
+              "A matriz de atributos está vazia ou não é uma matriz."
+            );
           }
         } else {
-          console.error('A resposta da API não contém a matriz contextResponses.');
+          console.error(
+            "A resposta da API não contém a matriz contextResponses."
+          );
         }
       })
       .catch((error) => {
-        console.error('Erro ao acessar a API: ' + error);
+        console.error("Erro ao acessar a API: " + error);
       });
   };
 
   useEffect(() => {
-    fetchData('http://localhost:3000/c', setDataC, true); // Defina isCO2 como true para CO2
-    fetchData('http://localhost:3000/v', setDataV);
-    fetchData('http://localhost:3000/t', setDataT);
-    fetchData('http://localhost:3000/h', setDataH);
-    fetchData('http://localhost:3000/l', setDataL);
-    fetchData('http://localhost:3000/b', setDataB);
+    fetchData("http://localhost:3000/c", setDataC, true); // Defina isCO2 como true para CO2
+    fetchData("http://localhost:3000/v", setDataV);
+    fetchData("http://localhost:3000/t", setDataT);
+    fetchData("http://localhost:3000/h", setDataH);
+    fetchData("http://localhost:3000/l", setDataL);
+    fetchData("http://localhost:3000/b", setDataB);
 
     const interval = setInterval(() => {
-      fetchData('http://localhost:3000/c', setDataC, true); // Defina isCO2 como true para CO2
-      fetchData('http://localhost:3000/v', setDataV);
-      fetchData('http://localhost:3000/t', setDataT);
-      fetchData('http://localhost:3000/h', setDataH);
-      fetchData('http://localhost:3000/l', setDataL);
-      fetchData('http://localhost:3000/b', setDataB);
+      fetchData("http://localhost:3000/c", setDataC, true); // Defina isCO2 como true para CO2
+      fetchData("http://localhost:3000/v", setDataV);
+      fetchData("http://localhost:3000/t", setDataT);
+      fetchData("http://localhost:3000/h", setDataH);
+      fetchData("http://localhost:3000/l", setDataL);
+      fetchData("http://localhost:3000/b", setDataB);
     }, 6000);
 
     // Lembre-se de limpar o intervalo quando o componente for desmontado para evitar vazamentos de memória
@@ -68,7 +73,7 @@ function ChartComponent() {
 
   const chartOptions = {
     chart: {
-      id: 'basic-line-chart',
+      id: "basic-line-chart",
       toolbar: {
         show: true,
         tools: {
@@ -82,7 +87,7 @@ function ChartComponent() {
       },
     },
     xaxis: {
-      type: 'datetime',
+      type: "datetime",
     },
     yaxis: {
       forceNiceScale: false,
@@ -91,51 +96,88 @@ function ChartComponent() {
       },
     },
     stroke: {
-      curve: 'smooth',
+      curve: "smooth",
     },
   };
 
   return (
     <div className="chart-container">
-      <h1 className='titulo'>Quadro de Gráficos</h1>
-      <button className='botaoVoltar'><Link to="/">Home</Link></button>
+      <h1 className="titulo">Quadro de Gráficos</h1>
+      <button className="botaoVoltar">
+        <Link to="/">Home</Link>
+      </button>
 
-      <div className='toptop-row'>
+      <div className="toptop-row">
         <div className="chart">
           <div className="chart-label">Oxigênio</div>
-          <ReactApexChart options={chartOptions} series={[{ name: 'Oxigênio', data: dataO }]} type="line" height={350} />
+          <ReactApexChart
+            options={chartOptions}
+            series={[{ name: "Oxigênio", data: dataO }]}
+            type="line"
+            height={350}
+          />
         </div>
       </div>
 
       <div className="top-row">
         <div className="chart">
           <div className="chart-label">CO2</div>
-          <ReactApexChart options={chartOptions} series={[{ name: 'CO2', data: dataC }]} type="line" height={350} />
+          <ReactApexChart
+            options={chartOptions}
+            series={[{ name: "CO2", data: dataC }]}
+            type="line"
+            height={350}
+          />
         </div>
         <div className="chart">
           <div className="chart-label">TVOC</div>
-          <ReactApexChart options={chartOptions} series={[{ name: 'TVOC', data: dataV }]} type="line" height={350} />
+          <ReactApexChart
+            options={chartOptions}
+            series={[{ name: "TVOC", data: dataV }]}
+            type="line"
+            height={350}
+          />
         </div>
       </div>
 
       <div className="bottom-row">
         <div className="chart">
           <div className="chart-label">Temperatura</div>
-          <ReactApexChart options={chartOptions} series={[{ name: 'Temperatura', data: dataT }]} type="line" height={350} />
+          <ReactApexChart
+            options={chartOptions}
+            series={[{ name: "Temperatura", data: dataT }]}
+            type="line"
+            height={350}
+          />
         </div>
         <div className="chart">
           <div className="chart-label">Umidade</div>
-          <ReactApexChart options={chartOptions} series={[{ name: 'Umidade', data: dataH }]} type="line" height={350} />
+          <ReactApexChart
+            options={chartOptions}
+            series={[{ name: "Umidade", data: dataH }]}
+            type="line"
+            height={350}
+          />
         </div>
       </div>
 
       <div className="chart-bottom">
         <div className="chart-label">Luminosidade</div>
-        <ReactApexChart options={chartOptions} series={[{ name: 'Luminosidade', data: dataL }]} type="line" height={350} />
+        <ReactApexChart
+          options={chartOptions}
+          series={[{ name: "Luminosidade", data: dataL }]}
+          type="line"
+          height={350}
+        />
       </div>
       <div className="chart-bottom">
         <div className="chart-label">Boia</div>
-        <ReactApexChart options={chartOptions} series={[{ name: 'Boia', data: dataB }]} type="bar" height={350} />
+        <ReactApexChart
+          options={chartOptions}
+          series={[{ name: "Boia", data: dataB }]}
+          type="bar"
+          height={350}
+        />
       </div>
     </div>
   );

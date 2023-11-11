@@ -4,7 +4,7 @@
   display: flex;
   margin: 4vh;
   .initial-text {
-    color: #6BF8D9;
+    color: #6bf8d9;
     margin-left: 20vh;
     font-family: $font;
     margin-top: 7.5vh;
@@ -20,13 +20,13 @@
     }
   }
 
-  .second-text{
+  .second-text {
     font-size: 15px;
     margin-bottom: 5px;
     margin-left: 20vh;
   }
 
-  .blocao{
+  .blocao {
     margin-bottom: 25px;
   }
 
@@ -34,7 +34,7 @@
     // margin-right: 4vh;
     margin-left: 40vh;
     margin-top: 1.5vh;
-    opacity: 0.80;
+    opacity: 0.8;
     max-width: 70vh;
     min-width: 10vh;
     height: auto;
@@ -44,28 +44,28 @@
   }
 }
 
-.loginbtn{
+.loginbtn {
   border-radius: 0 0 20px 0;
   // margin: 5.5vh;
   margin-top: 30px;
   margin-left: 20vh;
   text-decoration: none;
   color: #fff;
-  padding: .923rem;
+  padding: 0.923rem;
   background-color: #e4ae3b;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.loginbtn:hover{
+.loginbtn:hover {
   color: #fff;
   background-color: #997532;
 }
 
-#form-modal-aa{
+#form-modal-aa {
   color: black;
   width: 440px;
   height: 500px;
-  #aa{
+  #aa {
     background-color: #fff;
     color: black;
     width: 110%;
@@ -74,7 +74,7 @@
   }
 }
 
-#modal-título{
+#modal-título {
   color: aqua;
   font-weight: bold;
 }

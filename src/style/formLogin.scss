@@ -1,8 +1,8 @@
 /* POPPINS FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .wrapper {
   background-color: black;
@@ -15,7 +15,7 @@
   min-height: 100vh;
 }
 .side-image {
-  background-image: url('../assets/algas_marinhas.webp');
+  background-image: url("../assets/algas_marinhas.webp");
   min-height: 20vh;
   background-position: center;
   background-size: cover;
@@ -99,7 +99,7 @@ i {
 .submit {
   text-align: center;
 }
-.loginPoha{
+.loginPoha {
   background-color: #6de0c7;
   border: none;
   border-radius: 5px;
@@ -109,9 +109,9 @@ i {
   margin-top: 30px;
   font-size: 1.5rem;
   min-width: 10%;
-  transition: all .4s ease-in-out;
-  
-  a{
+  transition: all 0.4s ease-in-out;
+
+  a {
     color: #ffffff;
     text-decoration: none;
     font-size: 24px;
@@ -121,11 +121,10 @@ i {
     padding-left: 100px;
     padding-right: 100px;
   }
-  
-  &:hover{
+
+  &:hover {
     background-color: #5ec2ac;
   }
-
 }
 .submit:hover {
   background: #c4fff2;
@@ -164,13 +163,13 @@ span a:hover {
   }
 }
 
-.homebtn{
+.homebtn {
   color: #fff;
   text-decoration: none;
 }
 
-.homebtn:hover{
-  color:#fff;
+.homebtn:hover {
+  color: #fff;
 }
 
 .backhome {
@@ -178,11 +177,11 @@ span a:hover {
   border: 2px solid #fff;
   text-align: center;
   text-decoration: none;
-  margin-top: 50px; 
-  transition: all .4s ease-in-out
+  margin-top: 50px;
+  transition: all 0.4s ease-in-out;
 }
 
-.backhome:hover{
+.backhome:hover {
   border: 2px solid #fff;
   background-color: #cea55b;
 }
