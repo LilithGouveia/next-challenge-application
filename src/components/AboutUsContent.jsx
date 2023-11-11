@@ -9,7 +9,7 @@ export default function AboutUsContent() {
     <>
       <div className="container">
         <h1>Sobre Nós</h1>
-        <p className="Vagabundo">
+        <p className="textaoTrocado">
           Bem-vindo à SoftForge: Pioneiros na Revolução da Qualidade do Ar! Na
           SoftForge, não somos apenas uma empresa; somos uma paixão, uma missão,
           e uma promessa de um futuro mais saudável e vibrante. Com um
@@ -20,7 +20,7 @@ export default function AboutUsContent() {
         </p>
 
         <h1>Quem somos?</h1>
-        <p className="Vagabundo">
+        <p className="textaoTrocado">
           Somos a SoftForge, uma equipe de visionários dedicados a transformar a
           qualidade do ar que você respira. Nossa empresa foi fundada com uma
           visão audaciosa: criar soluções inovadoras que façam a diferença, não
@@ -28,7 +28,7 @@ export default function AboutUsContent() {
         </p>
 
         <h1>AquaTank: O Futuro da Qualidade do Ar</h1>
-        <p className="Vagabundo">
+        <p className="textaoTrocado">
           Nosso projeto principal, o <q>AquaTank</q>, é uma revolução em termos
           de qualidade do ar. O AquaTank é mais do que um produto; é uma obra de
           arte da engenharia que combina a beleza de um aquário com o poder das
@@ -39,7 +39,7 @@ export default function AboutUsContent() {
         </p>
 
         <h1>Nossa Missão:</h1>
-        <p className="Vagabundo">
+        <p className="textaoTrocado">
           Nossa missão é simples, mas poderosa: melhorar a qualidade de vida das
           pessoas. Estamos empenhados em tornar o mundo um lugar mais saudável,
           mais verde e mais inspirador. Acreditamos que todos merecem ar puro e
@@ -67,7 +67,7 @@ export default function AboutUsContent() {
           </li>
         </ol>
 
-        <p className="Vagabundo">
+        <p className="textaoTrocado">
           Na SoftForge, acreditamos que o futuro é agora. Nosso compromisso com
           a melhoria da qualidade do ar é sério, visando moldar um amanhã mais
           saudável e vibrante. Junte-se a nós nessa emocionante jornada em
