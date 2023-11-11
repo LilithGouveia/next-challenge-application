@@ -2,6 +2,8 @@ import AquaLogo from "../assets/aquatank_logo.png";
 import { Link } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
 import "../style/headerMain.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
 export default function HeaderMain() {
   return (
