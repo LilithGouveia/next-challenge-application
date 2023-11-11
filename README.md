@@ -8,34 +8,26 @@ Repositório referente ao NEXT em 2023 e a última entrega da Challenge FIAP - D
 
 Bem-vindo ao mundo revolucionário do Grupo SoftForge! Apresentamos com entusiasmo o nosso projeto inovador, o AquaTank, destinado a transformar a atmosfera das grandes cidades.
 
-Imagine uma cápsula de algas inteligente que não só capta o CO2 presente no ar, mas também o converte em oxigênio a cada precioso segundo. O AquaTank não é apenas um projeto; é uma solução visionária que redefine a maneira como respiramos e interagimos com o ambiente urbano.
-
-Junte-se a nós nessa jornada transformadora em direção a cidades mais verdes e respiráveis. O futuro do ar que respiramos começa aqui, com o AquaTank do Grupo SoftForge.
+O AquaTank é uma cápsula de algas inteligente que não só capta o CO2 presente no ar, mas também o converte em oxigênio a cada precioso segundo. O projeto é uma solução visionária que redefine a maneira como respiramos e interagimos com o ambiente urbano.
 
 ---
 
 ## Features Implementadas:
 
-* Página Inicial: Uma introdução cativante ao nosso universo.
-* Página de Login: A porta de entrada para uma experiência personalizada.
-* Sobre Nós: Conheça a essência por trás da nossa missão e visão.
-* Dashboard: O centro de controle que coloca você no comando.
+* Botão de Login e Sobre Nós;
+* Validação de usuário;
+* Dashboard.
 
 --- 
 
 ## Pré-requisitos
 
-Certifique-se de ter o Node.js instalado em seu sistema antes de começar. Caso ainda não tenha, você pode baixá-lo [aqui](https://nodejs.org/en).
-
----
-
-## Configuração do Site
-
-1. Baixe a pasta do repositório.
-2. Abra a pasta no Visual Studio Code (VSCode).
-3. No VSCode, abra o terminal.
-4. Execute o comando `npm install` para instalar as dependências necessárias.
-5. Após a instalação, rode o comando `npm run dev` para colocar o site no ar.
+1. Certifique-se de ter o Node.js instalado em seu sistema antes de começar. Caso ainda não tenha, você pode baixá-lo [aqui](https://nodejs.org/en).
+2. Baixe a pasta do repositório.
+3. Abra a pasta no Visual Studio Code (VSCode).
+4. No VSCode, abra o terminal.
+5. Execute o comando `npm install` para instalar as dependências necessárias.
+6. Após a instalação, rode o comando `npm run dev` para colocar o site no ar.
 
 ## Configuração da API do Site
 
