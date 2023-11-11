@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import { Link } from "react-router-dom";
 import "../../style/dashboard.scss";
+
+const handleLogout = () => {
+  sessionStorage.removeItem("token-user");
+  sessionStorage.removeItem("data-user");
+  window.location.href = "/login";
+};
 
 function ChartComponent() {
   const [dataC, setDataC] = useState([]);
@@ -103,8 +108,8 @@ function ChartComponent() {
   return (
     <div className="chart-container">
       <h1 className="titulo">Quadro de Gráficos</h1>
-      <button className="botaoVoltar">
-        <Link to="/">Home</Link>
+      <button onClick={handleLogout} className="botaoVoltar">
+        LogOut{/* <Link to="/">LogOut</Link> */}
       </button>
 
       <div className="toptop-row">
