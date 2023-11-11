@@ -8,6 +8,7 @@ import {
   MDBCol,
   MDBInput,
 } from "mdb-react-ui-kit";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import AquaLogo from "../../assets/aquatank_logo.png";
 
@@ -96,16 +97,15 @@ export default function Login() {
                 </a>
               </div>
             </div>
-
-            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="mb-0">Não possui uma conta?</p>
-              <div className="mx-2">
-                <MDBBtn outline id="custom2">
-                  Registrar
-                </MDBBtn>
-              </div>
-            </div>
           </form>
+          <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
+            <p className="mb-0">Não possui uma conta?</p>
+            <div className="mx-2">
+              <MDBBtn outline id="custom2">
+                Registrar
+              </MDBBtn>
+            </div>
+          </div>
         </MDBCol>
 
         <MDBCol col="6" className="mb-5">
@@ -113,10 +113,11 @@ export default function Login() {
             <div className="text-white px-3 py-4 p-md-5 mx-md-4">
               <h4 class="mb-4">Somos muito mais que um aquário!</h4>
               <p class="small mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                O AquaTank é uma cápsula de algas inteligente que não só capta o
+                CO2 presente no ar, mas também o converte em oxigênio a cada
+                precioso segundo. O projeto é uma solução visionária que
+                redefine a maneira como respiramos e interagimos com o ambiente
+                urbano.
               </p>
             </div>
           </div>
