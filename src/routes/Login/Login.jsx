@@ -97,16 +97,15 @@ export default function Login() {
                 </a>
               </div>
             </div>
-
-            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="mb-0">Não possui uma conta?</p>
-              <div className="mx-2">
-                <MDBBtn outline id="custom2">
-                  Registrar
-                </MDBBtn>
-              </div>
-            </div>
           </form>
+          <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
+            <p className="mb-0">Não possui uma conta?</p>
+            <div className="mx-2">
+              <MDBBtn outline id="custom2">
+                Registrar
+              </MDBBtn>
+            </div>
+          </div>
         </MDBCol>
 
         <MDBCol col="6" className="mb-5">
