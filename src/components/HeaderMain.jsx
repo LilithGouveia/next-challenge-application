@@ -21,7 +21,6 @@ export default function HeaderMain() {
               <Dropdown.Item> <Link className="loginBotao" to="/login">Login</Link></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-
         </div>
       </nav>
     </>
