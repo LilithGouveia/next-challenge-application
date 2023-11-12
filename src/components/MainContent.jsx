@@ -1,5 +1,5 @@
 // import MainImage from '../assets/lukevrogers_A_technological_tree_made_out_of_cyan_nodes_9a8c31ad-6025-4b17-947a-c0d3fe83b979.png';
-import Teste from "../assets/teste.png";
+// import Teste from "../assets/teste.png";
 import "../style/mainContent.scss";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
@@ -8,7 +8,8 @@ import Modal from "react-bootstrap/Modal";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-export default function MainContent() {
+export default function MainContent(props) {
+  const { imageSrc } = props.prop;
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -102,7 +103,8 @@ export default function MainContent() {
             </Modal.Body>
           </Modal>
         </div>
-        <img src={Teste} className="image-main" />
+        {/* <img src={Teste} className="image-main" /> */}
+        <img src={imageSrc} className="image-main" />
       </div>
     </>
   );
