@@ -65,7 +65,7 @@ export default function Cadastro() {
   };
 
   const handleVoltarLogin = () => {
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   return (
