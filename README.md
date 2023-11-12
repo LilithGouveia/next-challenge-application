@@ -19,7 +19,7 @@ O AquaTank é uma cápsula de algas inteligente que não só capta o CO2 present
 * Responsividade;
 * Dashboard;
 * JSON-server;
-* API;
+* API.
 
 --- 
 
@@ -52,7 +52,7 @@ Para configurar a IDE dos sensores, acesse o [link para o repositório da IDE do
 
 ---
 
-Agora você está pronto para explorar o site e integrá-lo com a API e a IDE dos sensores. Divirta-se!
+Agora você está pronto para explorar o site. Divirta-se!
 
 ---
 
