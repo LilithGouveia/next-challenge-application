@@ -33,7 +33,7 @@ export default function Login() {
     let user = users;
 
     try {
-      const response = await fetch("http://localhost:3000/usuarios");
+      const response = await fetch("https://aquatank-api.onrender.com/usuarios");
       users = await response.json();
     } catch (error) {
       alert("Ocorreu um erro no processamento da sua solicitação!");

@@ -11,7 +11,7 @@ export default function Cadastro() {
   const verificarEmailExistente = async (email) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/usuarios?email=${email}`
+        `https://aquatank-api.onrender.com/usuarios?email=${email}`
       );
       const data = await response.json();
       return data.length > 0;
@@ -29,7 +29,7 @@ export default function Cadastro() {
         alert("Este e-mail já está em uso. Tente outro e-mail.");
       } else {
         try {
-          const response = await fetch("http://localhost:3000/usuarios", {
+          const response = await fetch("https://aquatank-api.onrender.com/usuarios", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
