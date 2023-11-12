@@ -41,7 +41,7 @@ export default function Login() {
     for (let x = 0; x < users.length; x++) {
       user = users[x];
       if (user.email == usuario.email && user.senha == usuario.senha) {
-        alert("Login realizado com SUCESSO!");
+        alert("Login realizado com sucesso!");
         const tokenUser = Math.random().toString(16).substring(2);
         console.log(tokenUser);
         sessionStorage.setItem("token-user", tokenUser);
