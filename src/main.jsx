@@ -8,6 +8,8 @@ import Dashboard from "./routes/Dashboard/Dashboard.jsx";
 import Error from "./routes/Error/Error.jsx";
 import AboutUs from "./routes/AboutUs/AboutUs.jsx";
 
+import Cadastro from "./routes/Cadastro/Cadastro.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/login", element: <Login /> },
       { path: "/dashboard", element: <Dashboard /> },
       { path: "/sobreNos", element: <AboutUs /> },
+      { path: "/cadastro", element: <Cadastro /> },
     ],
   },
 ]);
