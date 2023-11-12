@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "../../style/cadastro.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function Cadastro() {
+
+  const navigate = useNavigate();
+
   const [novoUsuario, setNovoUsuario] = useState({
     name: "",
     email: "",
@@ -41,8 +45,8 @@ export default function Cadastro() {
             alert("Cadastro realizado com sucesso!");
             setNovoUsuario({ name: "", email: "", senha: "" });
 
-            // Redirecionar para a página de login após o registro bem-sucedido
-            window.location.href = "/login";
+            // window.location.href = "/login";
+            navigate("/login");
           } else {
             alert("Falha ao registrar usuário.");
           }
