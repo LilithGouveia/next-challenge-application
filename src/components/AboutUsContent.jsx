@@ -1,4 +1,4 @@
-import "../style/AboutUsContent.scss";
+import "../style/aboutUsContent.scss";
 import Time from "../assets/time.png";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
