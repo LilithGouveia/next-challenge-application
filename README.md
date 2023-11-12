@@ -1,3 +1,5 @@
+![Texto Alternativo](https://raw.githubusercontent.com/LilithGouveia/next-challenge-application/main/src/assets/Screenshot%202023-11-12%20at%2013.00.45.png)
+
 # Projeto Next Application
 
 Repositório referente ao NEXT em 2023 e a última entrega da Challenge FIAP - Desafios IBM.
@@ -9,6 +11,8 @@ Repositório referente ao NEXT em 2023 e a última entrega da Challenge FIAP - D
 Bem-vindo ao mundo revolucionário do Grupo SoftForge! Apresentamos com entusiasmo o nosso projeto inovador, o AquaTank, destinado a transformar a atmosfera das grandes cidades.
 
 O AquaTank é uma cápsula de algas inteligente que não só capta o CO2 presente no ar, mas também o converte em oxigênio a cada precioso segundo. O projeto é uma solução visionária que redefine a maneira como respiramos e interagimos com o ambiente urbano.
+
+
 
 ---
 
