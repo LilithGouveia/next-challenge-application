@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "../../style/cadastro.scss"
 
 export default function Registro() {
   const [novoUsuario, setNovoUsuario] = useState({
@@ -10,7 +11,9 @@ export default function Registro() {
 
   const verificarEmailExistente = async (email) => {
     try {
-      const response = await fetch(`http://localhost:3000/usuarios?email=${email}`);
+      const response = await fetch(
+        `http://localhost:3000/usuarios?email=${email}`
+      );
       const data = await response.json();
       return data.length > 0;
     } catch (error) {
@@ -63,34 +66,99 @@ export default function Registro() {
   };
 
   return (
-    <div>
-      <h2>Registro de Usuário</h2>
-      <input
+    <div class="container">
+    <h2 className="cadH">Cadastro de Usuário:</h2>
+    <div class="mb-3">
+        <input
         type="text"
+        class="form-control"
         name="name"
         placeholder="Nome"
         value={novoUsuario.name}
         onChange={handleChange}
-      />
-      <br />
-      <input
+        />
+    </div>
+    <div class="mb-3">
+        <input
         type="email"
+        class="form-control"
         name="email"
         placeholder="Digite seu email"
         value={novoUsuario.email}
         onChange={handleChange}
-      />
-      <br />
-      <input
+        />
+    </div>
+    <div class="mb-3">
+        <input
         type="password"
+        class="form-control"
         name="senha"
         placeholder="Digite sua senha"
         value={novoUsuario.senha}
         onChange={handleChange}
-      />
-      <br />
-      <button onClick={handleRegistro}>Cadastrar</button>
-      <button onClick={handleVoltarLogin}>Voltar para o Login</button>
+        />
     </div>
+    <button class="btnCad" onClick={handleRegistro}>Cadastrar</button>
+  <button class="btnVolt" onClick={handleVoltarLogin}>Voltar para o Login</button>
+    </div>
+
+
+    // <MDBContainer className="my-5 gradient-form">
+    //   <MDBRow>
+    //     <MDBCol col="6" className="mb-5">
+    //       <form className="d-flex flex-column ms-5">
+    //         <div className="text-center">
+    //           <img src={AquaLogo} alt="logo" className="img-logo" />
+    //         </div>
+
+    //         <p>Faça seu Cadastro:</p>
+
+    //         <MDBInput
+    //           wrapperClass="mb-4"
+    //           type="text"
+    //           name="name"
+    //           placeholder="Nome"
+    //           value={novoUsuario.name}
+    //           onChange={handleChange}
+    //         />
+    //         <MDBInput
+    //           wrapperClass="mb-4"
+    //           type="email"
+    //           name="email"
+    //           placeholder="Digite seu email"
+    //           value={novoUsuario.email}
+    //           onChange={handleChange}
+    //         />
+    //         <MDBInput
+    //           wrapperClass="mb-4"
+    //           type="password"
+    //           name="senha"
+    //           placeholder="Digite sua senha"
+    //           value={novoUsuario.senha}
+    //           onChange={handleChange}
+    //         />
+
+    //         <div className="text-center pt-1 mb-5 pb-1">
+    //           <MDBBtn className="mb-4 w-100 gradient-custom-2" onClick={handleRegistro}>Cadastrar</MDBBtn>
+    //           <div className="text-muted">
+    //             <a className="custom1" href="/">
+    //               Home
+    //             </a>
+    //           </div>
+    //         </div>
+    //       </form>
+    //       <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
+    //         <p className="mb-0">Já possui uma conta?</p>
+    //         <div className="mx-2">
+    //           <Link to="/login">
+    //             <MDBBtn outline id="custom2">
+    //               Login
+    //             </MDBBtn>
+    //           </Link>
+    //         </div>
+    //       </div>
+    //     </MDBCol>
+    //   </MDBRow>
+    // </MDBContainer>
   );
 }

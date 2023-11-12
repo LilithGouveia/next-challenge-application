@@ -1,50 +1,32 @@
-.gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #63b7e3;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(
-      to right,
-      #63b7e3,
-      #865e91,
-      #d96b6b
-    );
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #63b7e3, #865e91, #d96b6b);
+.cadH{
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.btnCad {
+  background-color: #9FE3DD;
+  border-color: #9FE3DD;
+  color: #004843;
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin-right: 10px;
+  transition: .3s;
+  &:hover{
+    font-size: 20px;
+    transition: .3s;
   }
-  
-  .custom2 {
-    color: white;
-    transition: 0.3s;
-    &:hover {
-      color: #63b7e3;
-      font-size: 18px;
-      transition: 0.3s;
-    }
+}
+
+.btnVolt {
+  color: #9FE3DD;
+  border-color: #9FE3DD;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 25px;
+  transition: .3s;
+  &:hover {
+    color:#9FE3DD;
+    font-size: 20px;
+    transition: .3s;
   }
-  
-  #custom1 {
-    color: #63b7e3;
-    border-color: #63b7e3;
-    transition: 0.3s;
-    &:hover {
-      color: #63b7e3;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .gradient-form {
-      height: 100vh !important;
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .gradient-custom-4 {
-      border-top-right-radius: 0.3rem;
-      border-bottom-right-radius: 0.3rem;
-    }
-  }
-  
+}
