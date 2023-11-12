@@ -56,20 +56,20 @@ function ChartComponent() {
   };
 
   useEffect(() => {
-    fetchData("http://localhost:3000/c", setDataC, true); // Defina isCO2 como true para CO2
-    fetchData("http://localhost:3000/v", setDataV);
-    fetchData("http://localhost:3000/t", setDataT);
-    fetchData("http://localhost:3000/h", setDataH);
-    fetchData("http://localhost:3000/l", setDataL);
-    fetchData("http://localhost:3000/b", setDataB);
+    fetchData("https://aquatank-api.onrender.com/c", setDataC, true); // Defina isCO2 como true para CO2
+    fetchData("https://aquatank-api.onrender.com/v", setDataV);
+    fetchData("https://aquatank-api.onrender.com/t", setDataT);
+    fetchData("https://aquatank-api.onrender.com/h", setDataH);
+    fetchData("https://aquatank-api.onrender.com/l", setDataL);
+    fetchData("https://aquatank-api.onrender.com/b", setDataB);
 
     const interval = setInterval(() => {
-      fetchData("http://localhost:3000/c", setDataC, true); // Defina isCO2 como true para CO2
-      fetchData("http://localhost:3000/v", setDataV);
-      fetchData("http://localhost:3000/t", setDataT);
-      fetchData("http://localhost:3000/h", setDataH);
-      fetchData("http://localhost:3000/l", setDataL);
-      fetchData("http://localhost:3000/b", setDataB);
+      fetchData("https://aquatank-api.onrender.com/c", setDataC, true); // Defina isCO2 como true para CO2
+      fetchData("https://aquatank-api.onrender.com/v", setDataV);
+      fetchData("https://aquatank-api.onrender.com/t", setDataT);
+      fetchData("https://aquatank-api.onrender.com/h", setDataH);
+      fetchData("https://aquatank-api.onrender.com/l", setDataL);
+      fetchData("https://aquatank-api.onrender.com/b", setDataB);
     }, 6000);
 
     // Lembre-se de limpar o intervalo quando o componente for desmontado para evitar vazamentos de memória
