@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ReactApexChart from "react-apexcharts";
 import "../../style/dashboard.scss";
-
-const handleLogout = () => {
-  sessionStorage.removeItem("token-user");
-  sessionStorage.removeItem("data-user");
-  window.location.href = "/login";
-};
 
 function ChartComponent() {
   const [dataC, setDataC] = useState([]);
@@ -16,6 +11,14 @@ function ChartComponent() {
   const [dataH, setDataH] = useState([]);
   const [dataL, setDataL] = useState([]);
   const [dataB, setDataB] = useState([]);
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    sessionStorage.removeItem("token-user");
+    sessionStorage.removeItem("data-user");
+    navigate("/login");
+  };
 
   const fetchData = (url, setData, isCO2 = false) => {
     fetch(url)
@@ -109,7 +112,7 @@ function ChartComponent() {
     <div className="chart-container">
       <h1 className="titulo">Quadro de Gráficos</h1>
       <button onClick={handleLogout} className="botaoVoltar">
-        LogOut{/* <Link to="/">LogOut</Link> */}
+        LogOut
       </button>
 
       <div className="toptop-row">
