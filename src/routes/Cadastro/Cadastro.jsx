@@ -58,6 +58,10 @@ export default function Registro() {
     setNovoUsuario({ ...novoUsuario, [name]: value });
   };
 
+  const handleVoltarLogin = () => {
+    window.location.href = "/login";
+  };
+
   return (
     <div>
       <h2>Registro de Usuário</h2>
@@ -72,7 +76,7 @@ export default function Registro() {
       <input
         type="email"
         name="email"
-        placeholder="Digite seu email."
+        placeholder="Digite seu email"
         value={novoUsuario.email}
         onChange={handleChange}
       />
@@ -80,13 +84,13 @@ export default function Registro() {
       <input
         type="password"
         name="senha"
-        placeholder="Digite sua senha."
+        placeholder="Digite sua senha"
         value={novoUsuario.senha}
         onChange={handleChange}
       />
       <br />
-      <button onClick={handleRegistro}>Registrar</button>
-      <p>{mensagem}</p>
+      <button onClick={handleRegistro}>Cadastrar</button>
+      <button onClick={handleVoltarLogin}>Voltar para o Login</button>
     </div>
   );
 }
