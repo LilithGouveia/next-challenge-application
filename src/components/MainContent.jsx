@@ -48,13 +48,13 @@ export default function MainContent(props) {
 
                   <Form.Group as={Col} controlId="formGridPassword">
                     <Form.Label>Senha</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control type="password" placeholder="Senha" />
                   </Form.Group>
                 </Row>
 
                 <Form.Group className="mb-3" controlId="formGridAddress1">
                   <Form.Label>Endereço</Form.Label>
-                  <Form.Control placeholder="1234 Main St" />
+                  <Form.Control placeholder="Rua AquaTank, 1234" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGridAddress2">
@@ -69,22 +69,12 @@ export default function MainContent(props) {
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>Tamanho</Form.Label>
-                    <Form.Select defaultValue="Choose...">
-                      <option>...</option>
-                      <option>P</option>
-                      <option>M</option>
-                      <option>G</option>
-                    </Form.Select>
-                  </Form.Group>
-
-                  <Form.Group as={Col} controlId="formGridState">
                     <Form.Label>Quantidade</Form.Label>
                     <Form.Select defaultValue="Choose...">
                       <option>...</option>
-                      <option>2</option>
-                      <option>6</option>
+                      <option>1</option>
                       <option>10</option>
+                      <option>100</option>
                     </Form.Select>
                   </Form.Group>
                 </Row>
