@@ -28,6 +28,7 @@ export default function Registro() {
 
       if (emailExistente) {
         setMensagem("Este e-mail já está em uso. Tente outro e-mail.");
+        alert("Este e-mail já está em uso. Tente outro e-mail.");
       } else {
         try {
           const response = await fetch("http://localhost:3000/usuarios", {
@@ -40,19 +41,23 @@ export default function Registro() {
 
           if (response.ok) {
             setMensagem("Usuário registrado com sucesso!");
+            alert("Login realizado com SUCESSO!");
             setNovoUsuario({ name: "", email: "", senha: "" });
 
             // Redirecionar para a página de login após o registro bem-sucedido
             window.location.href = "/login";
           } else {
             setMensagem("Falha ao registrar usuário.");
+            alert("Falha ao registrar usuário.")
           }
         } catch (error) {
           setMensagem("Ocorreu um erro no processamento da sua solicitação!");
+          alert("Ocorreu um erro no processamento da sua solicitação!")
         }
       }
     } else {
       setMensagem("Por favor, preencha todos os campos.");
+      alert("Por favor, preencha todos os campos.")
     }
   };
 
