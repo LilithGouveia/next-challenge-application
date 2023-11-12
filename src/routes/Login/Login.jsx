@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../style/login.scss";
+import { Link } from 'react-router-dom';
 import {
   MDBBtn,
   MDBContainer,
@@ -66,7 +67,7 @@ export default function Login() {
               <img src={AquaLogo} alt="logo" className="img-logo" />
             </div>
 
-            <p>Faça seu login</p>
+            <p>Faça seu login:</p>
 
             <MDBInput
               wrapperClass="mb-4"
@@ -74,7 +75,7 @@ export default function Login() {
               type="email"
               name="email"
               id="idEmail"
-              placeholder="Digite seu email."
+              placeholder="Digite seu email"
               value={usuario.email}
               onChange={handleChange}
             />
@@ -84,7 +85,7 @@ export default function Login() {
               type="password"
               name="senha"
               id="idSenha"
-              placeholder="Digite sua senha."
+              placeholder="Digite sua senha"
               value={usuario.senha}
               onChange={handleChange}
             />
@@ -101,9 +102,9 @@ export default function Login() {
           <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
             <p className="mb-0">Não possui uma conta?</p>
             <div className="mx-2">
-              <MDBBtn outline id="custom2">
-                Registrar
-              </MDBBtn>
+              <Link to="/cadastro">
+                <MDBBtn outline id="custom2">Registrar</MDBBtn>
+              </Link>
             </div>
           </div>
         </MDBCol>

@@ -1,0 +1,32 @@
+.cadH{
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.btnCad {
+  background-color: #9FE3DD;
+  border-color: #9FE3DD;
+  color: #004843;
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin-right: 10px;
+  transition: .3s;
+  &:hover{
+    font-size: 20px;
+    transition: .3s;
+  }
+}
+
+.btnVolt {
+  color: #9FE3DD;
+  border-color: #9FE3DD;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 25px;
+  transition: .3s;
+  &:hover {
+    color:#9FE3DD;
+    font-size: 20px;
+    transition: .3s;
+  }
+}
