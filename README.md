@@ -71,3 +71,5 @@ Agora você está pronto para explorar o site. Divirta-se!
 | Pedro P. Santos   |   552047   |   1ESPF   |
 | Rony Ken Nagai    |   551549   |   1ESPF   |
 | Tomáz V. Carballo |   551417   |   1ESPF   |
+
+![Texto Alternativo](https://raw.githubusercontent.com/LilithGouveia/next-challenge-application/main/src/assets/time_ganhando.png)
